@@ -18,6 +18,7 @@ class Kline(object):
         self.high = high_p
         self.low = low_p
         self.close = close_p
+        self.middle = (self.open + self.close) / 2
         self.change_range = float(change_range)
         # 计算 k 线的阴阳
         if self.close < self.open:
